@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="info"></p>
+    <script>
+        //modo estricto en javascript
+        "use strict";
+
+        //definicion de clase persona
+        class persona {
+            //el metodo constructor se llama al crear una nueva instancia de la clase
+            // y en este caso, inicializa las propiedades nombre y edad
+            constructor(){
+                this.nombre = nombre;
+                this.edad = edad;
+            }
+
+            //metodo saludar
+            saludar(){
+                return `Hola mi nombre es %(this.nombre) y tengo $(this.edad) años.`;
+            }
+        }
+
+        //una variable se puede delarar en "var" o " let"
+        var x = 5;
+
+        //Intentar usar una variable no declarada genera error
+        var x = 20;
+        console.log(x);
+        
+        //backticks `${}`
+        var y = 'Suma: ${x} + ${x} = ${x+x}';
+
+        //mostrar en consola
+        var x = 5
+        var y = 'Suma: ${x} + ${x} = ${x+x}'
+        console.log("una cadena");
+        console.log('otra cadena');
+        console.log(y);
+
+        document.write("<p>Una cadena</p>");
+        document.write('<p>otra cuenta</p>');
+        
+        document.write("<p>'Suma: ${x} + ${x} = ${x+x}'</p>");
+        document.write("<p>" + "</p>");
+        
+        //backticks `${}`
+        
+        var y = `Suma: ${x} + ${x} = ${x+x}`;
+        document.getElementById('info').innerHTML = Y;
+
+
+    </script>
+</body>
+</html>
