@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Usuarios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Gestion de usuarios</h1>
+
+    <form id="FormularioUsuarios">
+        <input type="hidden" id="entradaid">
+        <input type="text" id="entradaNombre" placeholder="Nombre" required>
+        <input type="email" id="entradaEmail" placeholder="email" required>
+        <button type="submit">Guardar</button>
+        <button type="button" id="botoncancelar" style="display: none">Cancelar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <ybody id="cuerpoTabla"></ybody>
+    </table>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

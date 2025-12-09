@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: rgb(67, 230, 67);
+}
+
+h1 {
+    color:blue
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type=text], input[type=email] {
+    padding: 8px;
+    margin-right: 8px;
+    width: 200px;
+}
+
+buttton {
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #656;
+}
+
+th. td {
+    padding: 10px;
+    border: 1px solid rgb(209, 253, 12);
+    text-align: left;
+}

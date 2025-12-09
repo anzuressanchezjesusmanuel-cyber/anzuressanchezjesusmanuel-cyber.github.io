@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso al sistema</title>
+</head>
+<body>
+    <!--Contenedor principal-->
+    <biv class="contenedor-login ">
+        <h2>Iniciar sesion</h2>
+        <!-- Formulario: Usamos IDs paara identificarios en el jS-->
+        <form id="loginform">
+            <div class="grupo_ingreso">
+                <label form="username">Usuario</label>
+                <input type="text" id="username" placeholder="Ingresa el nombre del usuario" required>
+            </div>
+
+             <div class="grupo_ingreso">
+                <label form="password">Contraseña</label>
+                <input type="text" id="password" placeholder="Ingresa lacontraseña" required>
+            </div>
+
+            <!-- Dispara el evento 'sumbit' del formulario-->
+            <button type="submit">Entrar</button>
+
+            <!--Parrafo vacio para inyectar mensajes de error si falta las credenciales-->
+            <p id="mensajeError" class="error"></p>
+        </form>
+    </biv>
+
+    <!-- Enlace al modulo de logica (JS) externo-->
+     <script src="login.js"></script>
+</body>
+</html>

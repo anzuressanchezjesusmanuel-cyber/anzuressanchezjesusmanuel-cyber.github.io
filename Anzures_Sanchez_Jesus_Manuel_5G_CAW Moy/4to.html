@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //modo estricto de java script 
+        "use strict";
+ 
+        //Definicion de la clase Persona 
+        class persona {
+            //El metodo constructor se llama al creear una nuvea instancia de la clase 
+            //y en este caso, inicializa las propiedades  
+            constructor(nombre, edad) {
+                this.nombre = nombre;
+                this.edad = edad;
+            }
+
+            //Mertodo saludar 
+            saludar() {
+                return `Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`;
+            }
+        }
+        
+        const hombre1 = new persona("Juan", 20)
+
+        document.write("<p>" + hombre1.saludar() + '</p>');
+    </script>
+</body>
+</html>

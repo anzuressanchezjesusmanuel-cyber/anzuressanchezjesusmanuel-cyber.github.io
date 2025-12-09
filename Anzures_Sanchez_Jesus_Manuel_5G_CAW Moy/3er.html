@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="info"></p>
+    <script>
+        //modo estricto de java script 
+        "use strict";
+ 
+        var x=5;
+        
+        //Backticks  `$()`
+        var y = `Suma: ${x} + ${x} = ${x+x}`;
+
+        document.getElementById("info").innerText = y;
+
+    </script>
+</body>
+</html>
